@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Passion+One');
+
+page-result {
+  background-image: url("../../assets/imgs/dinner.jpg");
+  background-size: cover;
+}
+
+#keywords {
+  background-color: white;
+  opacity: 0.75;
+  padding: 3%;
+  min-height: 100%;
+}
+
+.title1 {
+  font-family: Passion One;
+  font-size: 28px;
+  color: black;
+  margin-bottom: 2%;
+}
+
+.title2 {
+  font-family: Passion One;
+  font-size: 28px;
+  color: black;
+  margin-bottom: 2%;
+  opacity: 0 !important;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+}
+
+.keyword {
+  font-family: Passion One;
+  font-size: 40px;
+  color: black;
+  margin-left: 8%;
+  opacity: 0 !important;
+  animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+}
+
+.icons {
+  background-color: transparent;
+  padding: 3%;
+  position: absolute;
+  bottom: 0%;
+}
+
+.icon1 {
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+}
+
+.icon2 {
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  animation-delay: 2.5s;
+  animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+}
+
+.icon3 {
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  animation-delay: 3s;
+  animation-duration: 1s;
+  animation-name: fadeIn;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}

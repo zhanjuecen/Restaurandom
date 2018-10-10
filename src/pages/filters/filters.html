@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title><span style="color: white;text-align: center;">How Exciting!</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <img src="../../../assets/imgs/drive2.png" id ="transport_car"(click)="hideCar()" [style.display]="dis" />
+  <img src="../../../assets/imgs/walk2.png" id ="transport_walk" (click)="hideWalk()" [style.display]="dis" />
+
+
+  <div id="button-space">
+  <img id="small-button" src="../../../assets/imgs/small-button.png" (click)="search()"/>
+  </div>
+<br/>
+  <img src="../../../assets/imgs/breakfast1.png" id ="type_breakfast"(click)="hideBreakfast()" [style.display]="dis" />
+  <img src="../../../assets/imgs/lunch.png" id ="type_lunch" (click)="hideLunch()" [style.display]="dis" />
+  <img src="../../../assets/imgs/dinner3.png" id ="type_dinner" (click)="hideDinner()" [style.display]="dis" />
+  <img src="../../../assets/imgs/cafe.png" id ="type_cafe" (click)="hideCafe()" [style.display]="dis" />
+  <img src="../../../assets/imgs/midnight.png" id ="type_snack" (click)="hideSnack()" [style.display]="dis" />
+
+
+  <p>{{latitude}}{{longitude}}</p>
+  <p>{{city}}</p>
+</ion-content>
+
+

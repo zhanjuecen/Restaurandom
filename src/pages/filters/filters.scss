@@ -1,0 +1,135 @@
+page-filters {
+
+}
+
+.toolbar{
+  background-color: #3a3a3a;
+  box-shadow: 0 5px 5px grey;
+}
+
+.toolbar-background{
+  background-color: #3a3a3a;
+}
+
+#transport_container{
+}
+#transport_car{
+}
+
+#transport_walk{
+  display: none;
+}
+
+#type_breakfast{
+}
+
+#type_lunch{
+  display: none;
+}
+
+#type_dinner{
+  display: none;
+}
+
+#type_cafe{
+  display: none;
+}
+
+#type_snack{
+  display: none;
+}
+
+#car{
+  width: 150px;
+  z-index:400;
+  margin-top: 20px;
+  position: absolute;
+}
+
+#price{
+  margin-top: 10px;
+  background-color: rgba(161, 151, 139, 0.53);
+  height: 50%;
+  width: 200%;
+  margin-left:-100%;
+  margin-right:-100%;
+}
+#small-button{
+  position:absolute;
+  margin-top: -8vh;
+  right: 28vw;
+  width:38vw;
+  animation: pulse2 3s infinite;
+}
+
+#button-space{
+  text-align:center;
+  height: 0 !important;
+}
+
+@keyframes pulse2 {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+    opacity:1;
+  }
+  100% {
+    transform: rotateY(90deg);
+    opacity: 1;
+  }
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper:hover{
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+  width: 320px;
+  height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  background-color: #ffdd7a;
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  background-color: #ffb75c;
+  transform: rotateY(180deg);
+}

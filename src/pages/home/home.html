@@ -1,0 +1,26 @@
+  <div id = "header">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-2><img class="img-circle" src="../../../assets/imgs/profile.jpg" /> </ion-col>
+          <ion-col col-10> <span id="title"> {{user.name}}</span>
+            <p>{{user.city}}, {{user.state}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+  </div>
+
+
+
+  <div id = "main">
+    <div id="full-bu">
+    <img class="burgerPics" id ="b1" src="../../../assets/imgs/bu1.png"  />
+    <img class="burgerPics" id ="b2" src="../../../assets/imgs/bu2.png"  />
+    <img class="burgerPics" id ="b3" src="../../../assets/imgs/bu3.png"  />
+    <img class="burgerPics" id ="b4" src="../../../assets/imgs/bu4.png"  />
+    <img class="burgerPics" id ="b5" src="../../../assets/imgs/bu6.png"  />
+    </div>
+    <div id="pulsing">
+    <img id="full-button" src="../../../assets/imgs/main-button.png"
+         (click)="explore()" />
+    </div>
+  </div>
